@@ -1,0 +1,58 @@
+{
+    "CdkAppName": "PCTTracker",
+    "CdkBackendStack": "PCTTrackerBackend",
+    "CdkFrontendStack": "PCTTrackerFrontend",
+    "WebAppRootPrefix": "WebAppRoot/",
+    "hierarchy": "/PCTTracker/",
+    "parameters": [
+        {
+            "name": "frontendDomainName",
+            "cliFormat": "frontend-domain-name",
+            "description": "Domain name to use with the frontend. Must be registered with Route53",
+            "required": true
+        },
+        {
+            "name": "hostedZoneId",
+            "cliFormat": "hosted-zone-id",
+            "description": "Route53 hosted zone ID associated with your domain name",
+            "required": true
+        },
+        {
+            "name": "acmCertificateArn",
+            "cliFormat": "acm-certificate-arn",
+            "description": "ARN of the ACM certificate registered for your domain name",
+            "required": true
+        },
+        {
+            "name": "websiteAPIAllowedOrigins",
+            "cliFormat": "website-api-allowed-origins",
+            "description": "Please provide the domain of your website, to allow CORS. For example: https://aaaabbbbcccc.cloudfront.net",
+            "defaultValue": "*",
+            "required": true
+        },
+        {
+            "name": "mapsApiKey",
+            "cliFormat": "maps-api-key",
+            "description": "Your Google Maps API key. To generate this see https://developers.google.com/maps/documentation/javascript/get-api-key.",
+            "required": true
+        },
+        {
+            "name": "photoAlbumId",
+            "cliFormat": "photo-album-id",
+            "description": "Your Google Photos album ID. To do this see https://medium.com/@ValentinHervieu/how-i-used-google-photos-to-host-my-website-pictures-gallery-d49f037c8e3c",
+            "required": true
+        },
+        {
+            "name": "googleOauthClientId",
+            "cliFormat": "google-oauth-client-id",
+            "description": "The OAuth client ID created in Google Cloud to use Google as a social login provider.",
+            "required": true
+        },
+        {
+            "name": "googleOauthClientSecretName",
+            "cliFormat": "google-oauth-client-secret-name",
+            "description": "Name of the AWS Secret that is storing your google oauth client secret. This is not the secret itself. It is just a reference to it",
+            "required": true
+        }
+    ]
+}
