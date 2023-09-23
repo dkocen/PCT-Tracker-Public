@@ -4,8 +4,6 @@
 
 ---
 
-**For a working example go to https://davidkocen.com**
-
 This repo contains code for a cloud-based website allowing users to share their progress on hikes with friends and family using a Garmin InReach device. Every time a message is sent from the device the location and message is recorded using Garmin's Portal Connect API. Users can log into the website via Google Sign-on to see on a map where messages have been sent as well as the message content. Users can also leave comments in a running chatbox and view pictures uploaded to Google Photos.
 
 This website was designed initially to keep those I care about up to date while I was hiking the Pacific Crest Trail. It also helped me learn more about the AWS Cloud Development Kit, React, and TypeScript.
